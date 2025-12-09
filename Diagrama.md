@@ -1,23 +1,40 @@
-+--------------------+            +--------------------+           +--------------------+
-|      Usuario       |            |      Recurso       |           |      Préstamo      |
-+--------------------+            +--------------------+           +--------------------+
-| PK UsuarioID       |            | PK RecursoID       |           | PK PrestamoID      |
-| Nombre             |            | Título             |           | FK UsuarioID       |
-| TipoUsuario        |            | Tipo               |           | FK RecursoID       |
-+--------------------+            +--------------------+           | FechaPrestamo      |
-                                                                  | FechaDevolucion    |
-                                                                  | Estado             |
-                                                                  +--------------------+
-                                                                          |
-                                                                          | N
-                                                                          |
-                                                                          | 1
-                                                                  +--------------------+
-                                                                  |      Reserva       |
-                                                                  +--------------------+
-                                                                  | PK ReservaID       |
-                                                                  | FK UsuarioID       |
-                                                                  | FK RecursoID       |
-                                                                  | FechaReserva       |
-                                                                  | Estado             |
-                                                                  +--------------------+
+                    +--------------------+
+                    |      Usuario       |
+                    +--------------------+
+                    | PK UsuarioID       |
+                    | Nombre             |
+                    | TipoUsuario        |
+                    +--------------------+
+                             |
+                             | FK
+                             |
++--------------------+       |
+|      Préstamo      |-------+
++--------------------+
+| PK PrestamoID      |
+| FK UsuarioID       |
+| FK RecursoID       |
+| FechaPrestamo      |
+| FechaDevolucion    |
+| Estado             |
++--------------------+
+                             |
+                             | FK
+                             |
+                    +--------------------+
+                    |      Recurso       |
+                    +--------------------+
+                    | PK RecursoID       |
+                    | Título             |
+                    | Tipo               |
+                    +--------------------+
+
+                    +--------------------+
+                    |      Reserva       |
+                    +--------------------+
+                    | PK ReservaID       |
+                    | FK UsuarioID       |
+                    | FK RecursoID       |
+                    | FechaReserva       |
+                    | Estado             |
+                    +--------------------+
