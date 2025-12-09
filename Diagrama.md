@@ -1,40 +1,35 @@
-                    +--------------------+
-                    |      Usuario       |
-                    +--------------------+
-                    | PK UsuarioID       |
-                    | Nombre             |
-                    | TipoUsuario        |
-                    +--------------------+
-                             |
-                             | FK
-                             |
-+--------------------+       |
-|      Préstamo      |-------+
+# Diagrama ER - Biblioteca Universitaria
+
+```text
 +--------------------+
-| PK PrestamoID      |
-| FK UsuarioID       |
-| FK RecursoID       |
-| FechaPrestamo      |
+|      Usuario       |
++--------------------+
+| PK UsuarioID       |
+| Nombre             |
+| TipoUsuario        |
++--------------------+
+         |
+         | FK
+         |
++--------------------+       +--------------------+       +--------------------+
+|      Préstamo      |-------|      Recurso       |
++--------------------+       +--------------------+
+| PK PrestamoID      |       | PK RecursoID       |
+| FK UsuarioID       |       | Título             |
+| FK RecursoID       |       | Tipo               |
+| FechaPrestamo      |       +--------------------+
 | FechaDevolucion    |
 | Estado             |
 +--------------------+
-                             |
-                             | FK
-                             |
-                    +--------------------+
-                    |      Recurso       |
-                    +--------------------+
-                    | PK RecursoID       |
-                    | Título             |
-                    | Tipo               |
-                    +--------------------+
-
-                    +--------------------+
-                    |      Reserva       |
-                    +--------------------+
-                    | PK ReservaID       |
-                    | FK UsuarioID       |
-                    | FK RecursoID       |
-                    | FechaReserva       |
-                    | Estado             |
-                    +--------------------+
+         |
+         | FK
+         |
++--------------------+
+|      Reserva       |
++--------------------+
+| PK ReservaID       |
+| FK UsuarioID       |
+| FK RecursoID       |
+| FechaReserva       |
+| Estado             |
++--------------------+
