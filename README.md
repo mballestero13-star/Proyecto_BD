@@ -1,1 +1,5 @@
-# Proyecto_BD
+Situación de la entidad: Biblioteca Universitaria
+
+La Biblioteca Universitaria de una institución educativa necesita implementar una base de datos para gestionar de manera eficiente sus recursos y servicios. Actualmente, el personal administra manualmente el inventario de libros, revistas, tesis y otros recursos, además de registrar los préstamos, devoluciones y usuarios. Esto ocasiona errores, pérdida de información y dificultades para acceder rápidamente a los datos.
+
+Con la implementación de una base de datos, la biblioteca podrá registrar y consultar en tiempo real el inventario de recursos, gestionar las reservas y préstamos de los usuarios, y mantener un historial de transacciones. Además, permitirá generar reportes automáticos sobre los recursos más solicitados, usuarios con más préstamos y libros pendientes de devolución. La base de datos facilitará también la gestión de socios, control de multas y la asignación de recursos, optimizando la operatividad y mejorando el servicio a la comunidad universitaria.
